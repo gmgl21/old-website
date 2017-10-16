@@ -2,7 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 h1,
 h4,
 .navbar-brand,
@@ -11,6 +10,9 @@ h4,
   font-weight: 500;
 }
 
+.navbar.container {
+  width: 100vw;
+}
 .navbar-brand {
   font-size: 2em;
 }
@@ -34,8 +36,6 @@ h4,
   text-align: center;
 }
 
-
-
 #quote {
   max-height: 100vh;
   padding-top: 30vh;
@@ -48,6 +48,10 @@ h4,
   word-spacing: 0.25em;
   color: #fff;
 }
+
+/*#myCarousel {*/
+/*  max-height: 100vh;*/
+/*}*/
 
 .carousel-inner img {
   width: 100%;
@@ -62,7 +66,7 @@ h4,
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 10%;
 }
 
 .contact span {
@@ -85,102 +89,19 @@ h4,
   color: red;
 }
 
-
-/*portfolio page style*/
-#portfolio-pg {
-  padding-top: 10vh;
-  background-color: #D3D3D3;
-  width: 100%;
-}
-
-#project h4 {
-  font-weight: 500;
-}
-
-#project {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: center;
-  z-index: 0;
-}
-
-#project img {
-  width: 80%;
-  height: 80%;
-}
-
-.btn-group {
-  position: absolute;
-  text-align: center;
-  z-index: 1;
-  right: 100px;
-  bottom: 30px;
-}
-.btn-code {
-  margin-right: 10px!important;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  border: 2px solid #C0C0C0!important;
-  background: #808080!important;
-  color: #C0C0C0!important;
-  border-radius: 50%!important;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-}
-.fa-2x {
-  display: flex;
-  align-items: center;
-}
-
-
-/*contact page style*/
-
-.container-contact {
-  padding-top : 30vh;
-  max-height: 100vh;
-}
-.contact-row {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: flex-start;
-  width: 500px;
-  padding-bottom: 20px;
-}
-
-.contact-icon {
-  text-align: right;
-  margin-left: 25%;
-  align-self: flex-start;
-  width: 25px;
-  color: #0033ff;
-}
-
-.contact-link {
-  align-self: center;
-  margin-left: 10%;
-  width: 150px;
-  font-size: 20px;
-  color: #000;
-  text-decoration: none !important;
-}
-
-/*blog page style*/
-#blog {
-  padding-top: 40vh;
-  padding-bottom: 60vh;
-  background-color: #000;
-  color: #fff;
-}
-
-#blog h1 {
-  font-size: 100px;
-  text-align: center;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  .navbar-toggle.collapsed {
+    padding: .75rem;
+  }
+  
+  #quote h1 {
+    font-size: 40px;
+  }
 }
