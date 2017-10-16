@@ -1,0 +1,71 @@
+#portfolio-pg {
+  padding-top: 10vh;
+  background-color: #D3D3D3;
+  width: 100%;
+}
+
+#project h4 {
+  font-weight: 500;
+}
+
+#project {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  z-index: 0;
+}
+
+#project img {
+  width: 80%;
+  height: 80%;
+}
+
+.btn-group {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  right: 100px;
+  bottom: 30px;
+}
+.btn-code {
+  margin-right: 10px!important;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C0C0C0 !important;
+  background: #808080!important;
+  color: #C0C0C0!important;
+  border-radius: 50%!important;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+.fa-2x {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .btn-group {
+    right: 50px;
+    bottom: 15px;
+  }
+  
+  .btn {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .fa-2x {
+    font-size: 90%;
+  }
+}

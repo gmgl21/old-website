@@ -1,0 +1,45 @@
+.container-contact {
+  padding-top : 30vh;
+  max-height: 100vw;
+}
+.contact-row {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
+  max-width: 100vw;
+  padding-bottom: 20px;
+}
+
+.contact-icon {
+  text-align: right;
+  margin-left: 40%;
+  align-self: flex-start;
+  width: 25px;
+  color: #0033ff;
+}
+
+.contact-link {
+  align-self: center;
+  margin-left: 5%;
+  width: 150px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none !important;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .contact-icon {
+    margin-left: 20%;
+  }
+  
+  .contact-link {
+    margin-left: 15%;
+    font-size: 15px;
+  }
+  
+}

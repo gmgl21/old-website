@@ -1,0 +1,11 @@
+#blog {
+  padding-top: 40vh;
+  padding-bottom: 60vh;
+  background-color: #000;
+  color: #fff;
+}
+
+#blog h1 {
+  font-size: 100px;
+  text-align: center;
+}
